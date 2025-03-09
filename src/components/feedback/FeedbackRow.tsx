@@ -19,7 +19,7 @@ const FeedbackRow: React.FC<IFeedbackRow> = ({ feedback }) => {
           "text-red-600": feedback.reviewStatus === 'rejected', 
           "text-green-600": feedback.reviewStatus === 'approved', 
         })}>{feedback.reviewStatus}</div>
-        <button onClick={() => setIsOpenModal(true)}>Review</button>
+        <button className="text-blue-600" onClick={() => setIsOpenModal(true)}>Review</button>
       </div>
       <FeedbackModal
         isOpen={isOpenModal}

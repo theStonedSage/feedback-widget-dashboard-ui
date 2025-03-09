@@ -6,7 +6,6 @@ interface IFeedbackSection {}
 
 const FeedbackSection: React.FC<IFeedbackSection> = ({}) => {
   const { data: feedbacks, isLoading } = useFeedbacks();
-  console.log("feedbacks", feedbacks);
   if(isLoading){
       return <div>Loading Feedbacks...</div>
   }

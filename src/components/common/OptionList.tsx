@@ -95,7 +95,6 @@ const OptionList: React.FC<IOptionList> = ({
             option={option}
             onDelete={() => {
               const optCopy = [...options];
-              console.log("splicing ", i)
               setOptions([...optCopy.splice(i, 1)]);
             }}
           />
